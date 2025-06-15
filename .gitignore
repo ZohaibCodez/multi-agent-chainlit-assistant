@@ -1,15 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.env
+
+# Environment
 .venv/
+env/
 .python-version
-uv.lock  # This is debatable - some prefer to commit it
+uv.lock
 
-.env
-*.key
-openai_api_key.txt
-secrets.json
+# VSCode settings (optional)
+.vscode/
 
+# Chainlit
 .chainlit/
-chainlit.db
-.files/
 
-.agents/
-agent_cache/
+# OS files
+.DS_Store
+
+# Any backup or temporary files
+*.bak
+*.swp
+__pycache__/
+.env
+.chainlit/
+uv.lock

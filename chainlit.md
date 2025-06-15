@@ -1,14 +1,46 @@
-# Welcome to Chainlit! 🚀🤖
+# Welcome to Multi-Agent Chainlit Assistant! 👋
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+This is a powerful AI assistant that can help you with various tasks using multiple specialized agents.
 
-## Useful Links 🔗
+## Available Tools
 
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
+- **Calculator**: Perform mathematical calculations
+- **Web Search**: Search the web for information
 
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
+## How to Use
 
-## Welcome screen
+1. Type your question or request in the chat
+2. The assistant will automatically choose the most appropriate tool
+3. You'll get a detailed response with the results
 
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+## Example Questions
+
+- "What is 123 * 456?"
+- "Tell me a fun fact about space"
+- "Search for the latest news about AI"
+- "Explain this code: print('Hello, World!')"
+- "Read the contents of example.txt"
+
+## Features
+
+- 🤖 Multiple specialized AI agents
+- 🔧 Tool selection based on context
+- 📝 Detailed explanations
+- 🔄 Interactive conversation
+- 🎯 Accurate results
+
+## Tips
+
+- Be specific in your questions
+- You can ask follow-up questions
+- The assistant will remember the conversation context
+- You can request different tools for the same question
+
+## Need Help?
+
+If you have any questions or need assistance, just ask! The assistant is here to help you with any task.
+
+---
+
+<tool name="calculator" description="Perform mathematical calculations" icon="/public/calculator_icon.svg" />
+<tool name="web_search" description="Search the web for information" icon="/public/web_search_icon.svg" />

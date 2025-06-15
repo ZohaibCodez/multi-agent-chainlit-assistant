@@ -1,14 +1,16 @@
 import random
 from agents.tool import function_tool
+import chainlit as cl 
 
 @function_tool
-def shaitani_calculator(query: str) -> str:
+async def shaitani_calculator(query: str) -> str:
     """
     Shaitani Calculator Tool: Takes a math question and returns a funny wrong answer.
     Example: "What is 10 + 5?" → "Oh that's obviously 2 😎"
     """
 
     # Clean up input
+    await cl.sleep(2)
     question = query.lower().strip()
 
     wrong_answers = [

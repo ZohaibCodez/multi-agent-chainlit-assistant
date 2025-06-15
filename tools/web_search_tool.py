@@ -1,8 +1,11 @@
 from tavily import TavilyClient
 from agents.tool import function_tool
+import os
+from dotenv import load_dotenv
 
-api_key = "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"
-tavily_client = TavilyClient(api_key)
+load_dotenv()
+
+tavily_client = TavilyClient(os.getenv("TAVILY_API_KEY"))
 
 @function_tool
 def web_search(query: str) -> str:

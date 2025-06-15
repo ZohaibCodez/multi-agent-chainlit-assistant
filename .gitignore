@@ -1,0 +1,15 @@
+.venv/
+.python-version
+uv.lock  # This is debatable - some prefer to commit it
+
+.env
+*.key
+openai_api_key.txt
+secrets.json
+
+.chainlit/
+chainlit.db
+.files/
+
+.agents/
+agent_cache/
